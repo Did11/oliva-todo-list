@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.min.css'; // Importa Bootstrap aquí
+import './index.css';
 import App from './App';
-import './index.css';  // Asegúrate de tener un archivo CSS o elimina esta línea si no lo usas
+import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -9,3 +11,5 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
+
+reportWebVitals(console.log);

@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  /* background-color: #282c34; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,8 +25,15 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #61fb69;
 }
+
+
+.task-completed {
+  text-decoration: line-through;
+  color: #888; /* Cambiar el color para que se note que está completada */
+}
+
 
 @keyframes App-logo-spin {
   from {
