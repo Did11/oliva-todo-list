@@ -1,6 +1,5 @@
 .
-├── estructura_filtrad2a.txt
-├── estructura_filtrada.txt
+├── estructura2.txt
 ├── estructura.txt
 ├── package.json
 ├── package-lock.json
@@ -14,12 +13,16 @@
 ├── README.md
 └── src
     ├── App.css
-    ├── App.js
+    ├── App.jsx
     ├── App.test.js
+    ├── components
+    │   ├── Task.jsx
+    │   └── TaskList.jsx
     ├── index.css
     ├── index.js
     ├── logo.svg
     ├── reportWebVitals.js
-    └── setupTests.js
+    ├── setupTests.js
+    └── styles.css
 
-2 directories, 20 files
+3 directories, 22 files
