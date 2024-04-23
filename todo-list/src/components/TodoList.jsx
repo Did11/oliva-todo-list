@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import Task from './Task';
+import TodoItem from './TodoItem'; // Asegúrate que la importación es correcta
 
-const TaskList = () => {
+const TodoList = () => {
   const [tasks, setTasks] = useState([]);
 
-  // Aquí podrías cargar las tareas desde un API o localmente
   useEffect(() => {
     // Simular la carga de tareas
     const fetchedTasks = [
@@ -23,12 +22,14 @@ const TaskList = () => {
   }
 
   return (
-    <div>
-      {tasks.map(task => (
-        <Task key={task.id} task={task} onComplete={handleComplete} onDelete={handleDelete} />
-      ))}
+    <div className="bg-primary">
+      <div>
+        {tasks.map(task => (
+          <TodoItem key={task.id} task={task} onComplete={handleComplete} onDelete={handleDelete} />
+        ))}
+      </div>
     </div>
   );
 }
 
-export default TaskList;
+export default TodoList;
