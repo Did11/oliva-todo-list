@@ -11,12 +11,12 @@ const AddTodoForm = ({ onAddTask }) => {
   }
 
   return (
-    <form onSubmit={handleSubmit} style={{ marginBottom: '20px' }}> {/* Agregar margen inferior */}
-      <input
-        type="text"
+    <form onSubmit={handleSubmit} className="add-todo-form" style={{ marginBottom: '20px' }}>
+      <textarea
         value={input}
         onChange={(e) => setInput(e.target.value)}
         placeholder="Escribe una nueva tarea"
+        rows="8" // Ajustar el número de líneas visibles inicialmente
       />
       <button type="submit">Agregar tarea</button>
     </form>

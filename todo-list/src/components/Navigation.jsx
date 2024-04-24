@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 const Navigation = () => (
-  <nav>
+  <nav className="navigation">
     <ul>
       <li><Link to="/">Inicio</Link></li>
       <li><Link to="/about">Acerca de</Link></li>

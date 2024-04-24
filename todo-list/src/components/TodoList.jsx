@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import TodoItem from './TodoItem';
 import AddTodoForm from './AddTodoForm';
 
+
 const TodoList = () => {
   const [tasks, setTasks] = useState(() => {
     const savedTasks = localStorage.getItem('tasks');
@@ -40,9 +41,9 @@ const TodoList = () => {
   }
 
   return (
-    <div className="bg-primary">
+    <div className="todo-list-container bg-primary">
       <AddTodoForm onAddTask={handleAddTask} />
-      <div>
+      <div className="todo-items-container">
         {tasks.map(task => (
           <TodoItem key={task.id} task={task} onComplete={handleComplete} onDelete={handleDelete} />
         ))}

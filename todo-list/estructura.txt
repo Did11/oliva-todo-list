@@ -10,14 +10,14 @@
 │   ├── robots.txt
 │   └── static
 │       ├── css
-│       │   ├── main.f9855181.css
-│       │   └── main.f9855181.css.map
+│       │   ├── main.39079995.css
+│       │   └── main.39079995.css.map
 │       └── js
 │           ├── 453.81f383cb.chunk.js
 │           ├── 453.81f383cb.chunk.js.map
-│           ├── main.c91f8a78.js
-│           ├── main.c91f8a78.js.LICENSE.txt
-│           └── main.c91f8a78.js.map
+│           ├── main.30a94903.js
+│           ├── main.30a94903.js.LICENSE.txt
+│           └── main.30a94903.js.map
 ├── estructura.txt
 ├── package.json
 ├── package-lock.json

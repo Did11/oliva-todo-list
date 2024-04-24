@@ -1,3 +1,11 @@
+/* Base styles */
+.body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #941616;
+}
+
+/* App component styles */
 .App {
   text-align: center;
 }
@@ -7,14 +15,7 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  /* background-color: #282c34; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,55 +26,162 @@
 }
 
 .App-link {
-  color: #61fb69;
+  color: #fb61e6;
 }
 
+/* Animation for App logo */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
 
-.task, .task-completed {
-  padding: 10px;              /* Asegura un padding uniforme */
-  margin-bottom: 10px !important;;        /* Espacio uniforme entre tareas */
-  border-radius: 8px;         /* Bordes redondeados */
-  border: 2px solid;          /* Define el borde pero el color se especifica en las clases individuales */
+/* Navigation styles */
+.navigation {
+  width: 100%;
+  background-color: #1eaec7;
+  border-right: 1px solid #ccc;
+}
+
+.navigation nav,
+.navigation ul {
+  width: 100%;
+}
+
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation ul li {
+  display: flex;
+}
+
+.navigation ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  white-space: nowrap;
+  min-width: 80px;
+}
+
+.navigation ul li a:hover {
+  background-color: #111;
+}
+
+/* Task styles */
+.task,
+.task-completed {
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid;
+  width: 300px; /* Esto hará que todas las tarjetas tengan el mismo ancho */
+  min-height: 100px; /* Esto es un mínimo de alto; las tarjetas pueden crecer más si el contenido es mayor */
+  /* No establezcas una max-height a menos que quieras limitar el largo */
+  /* overflow-y: visible; */ /* No es necesario a menos que quieras un comportamiento específico de desbordamiento */
+  margin-bottom: 20px; /* Añade un poco de espacio debajo de cada tarjeta */
 }
 
 .task {
-  border-color: #000000;      /* Borde negro para tareas no completadas */
-  background-color: #ADD8E6;  /* Color de fondo para tareas no completadas */
+  border-color: #000000;
+  background-color: #df911c;
 }
 
 .task-completed {
-  border-color: #808080;      /* Borde gris para tareas completadas */
-  text-decoration: line-through;
-  color: #888;                /* Cambiar el color para que se note que está completada */
-  background-color: #6EE7B7;  /* Color de fondo para tareas completadas */
-}
-/* App.css */
-.body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #941616;
+  background-color: #4bbf1d;
 }
 
+.task-completed p {
+  text-decoration: line-through;
+}
+
+.task-completed button {
+  text-decoration: none;
+}
+
+/* Container styles */
 .app-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 10px;
-}
-
-.navigation {
-  width: 200px;
-  background-color: #f0f0f0;
-  border-right: 1px solid #ccc;
-  margin-right: 20px;
+  width: 100%;
 }
 
 .content {
-  max-width: 90%;
+  max-width: none;
   width: 100%;
-  padding: 20px;
-  background-color: #ffffff;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-top: 20px;
+}
+
+/* AddTodoForm styles */
+.add-todo-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; /* Usa el 100% del ancho disponible del contenedor padre */
+  max-width: 800px; /* Aumenta el ancho máximo si es necesario */
+  margin: 0 auto; /* Centra el formulario horizontalmente */
+}
+
+.add-todo-form input[type="text"] {
+  width: 100%; /* Usa el 100% del ancho del formulario .add-todo-form */
+  max-width: 800px; /* Ajusta esto al ancho máximo que prefieras */
+  padding: 12px 10px; /* Adecuado padding interior para el input */
+  margin-bottom: 10px; /* Espacio debajo del input */
+  font-size: 16px; /* Tamaño de letra legible para el input */
+  border: 1px solid #ccc; /* Borde sutil y estilizado para el input */
+  border-radius: 4px; /* Bordes redondeados para el input */
+  line-height: 1.5; /* Espaciado de línea para el contenido del input */
+  box-sizing: border-box; /* El padding y border se incluyen en el cálculo del ancho */
+}
+
+.add-todo-form button {
+  padding: 10px 20px; /* Adecuado padding interior para el botón */
+  margin-left: 8px; /* Espacio a la izquierda del botón */
+  height: 50px; /* Altura del botón para que coincida con la del input */
+  font-size: 16px; /* Tamaño de letra legible para el botón */
+  border: 1px solid #ccc; /* Borde sutil y estilizado para el botón */
+  border-radius: 4px; /* Bordes redondeados para el botón */
+}
+
+
+
+
+/* Estilo para el contenido de la tarea que respeta los saltos de línea */
+.task-content {
+  white-space: pre-wrap; /* Conserva los espacios y saltos de línea */
+}
+
+
+/* Asume que este estilo está en App.css o en TodoList.css */
+.todo-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Esto centrará los hijos en el eje cruzado */
+}
+
+.todo-items-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Esto centrará los TodoItem componentes */
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: flex-start; */ /* Elimina esta línea */
+  height: 100vh;
+  padding: 20px;
+  margin-top: 20px; /* Ajusta el margen superior según sea necesario */
 }

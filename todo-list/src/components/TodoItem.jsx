@@ -9,14 +9,13 @@ const TodoItem = ({ task, onComplete, onDelete }) => {
     onComplete(task.id);
   };
 
-  // Asegúrate de que las clases se aplican al div más externo
   return (
-    <div className={`col-2 shadow-md rounded-lg mb-1 ${completed ? 'task-completed' : 'task'}`} style={{ backgroundColor: completed ? '#6EE7B7' : '#ADD8E6' }}>
-      <div className="p-2 flex justify-between items-center">
-        <p className="text-gray-800">{task.description}</p>
-        <div>
-          <Button onClick={handleComplete} className="btn-success" label={completed ? "Completado" : "Completar"} />
-          <Button onClick={() => onDelete(task.id)} className="btn-danger" label="Delete" />
+    <div className={`shadow-md rounded-lg mb-1 ${completed ? 'task-completed' : 'task'}`}>
+      <div className="p-2">
+        <p className="task-content">{task.description}</p> {/* Añade la clase task-content acá */}
+        <div className="d-flex justify-content-center">
+          <Button onClick={handleComplete} className="btn-success me-1" label={completed ? "Reactivar" : "Completar"} />
+          <Button onClick={() => onDelete(task.id)} className="btn-danger" label="Eliminar" />
         </div>
       </div>
     </div>
