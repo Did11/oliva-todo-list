@@ -23,6 +23,7 @@ Este repositorio contiene la tarea de la Guía 01 de JavaScript. En este proyect
 - CSS
 - JavaScript
 - Bootstrap
+- Bootstrap
 
 ## Información Adicional
 
@@ -30,8 +31,10 @@ Este repositorio contiene la tarea de la Guía 01 de JavaScript. En este proyect
 - Uso de arrow functions en el código.
 - Uso de localStorage para almacenar las tareas.
 - La aplicación puede probarse localmente utilizando `serve -s build` en un entorno diferente al de desarrollo.
+- La aplicación puede probarse localmente utilizando `serve -s build` en un entorno diferente al de desarrollo.
 
+## Autor
 ## Autor
 
 Oliva, Didier.
-
+Oliva, Didier.
