@@ -2,12 +2,11 @@
 ├── estructura.txt
 ├── README.md
 └── todo-list
-    ├── estructura_filtrad2a.txt
-    ├── estructura_filtrada.txt
     ├── package.json
     ├── package-lock.json
     ├── public
     │   ├── favicon.ico
+    │   ├── favicon.png
     │   ├── index.html
     │   ├── logo192.png
     │   ├── logo512.png
@@ -16,11 +15,15 @@
     ├── README.md
     └── src
         ├── App.css
-        ├── App.js
+        ├── App.jsx
         ├── App.test.js
         ├── components
-        │   ├── Task.js
-        │   └── TaskList.js
+        │   ├── About.jsx
+        │   ├── Button.jsx
+        │   ├── Home.jsx
+        │   ├── Navigation.jsx
+        │   ├── TodoItem.jsx
+        │   └── TodoList.jsx
         ├── index.css
         ├── index.js
         ├── logo.svg
@@ -28,4 +31,4 @@
         ├── setupTests.js
         └── styles.css
 
-4 directories, 24 files
+4 directories, 27 files

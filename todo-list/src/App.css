@@ -29,17 +29,51 @@
 }
 
 
-.task-completed {
-  text-decoration: line-through;
-  color: #888; /* Cambiar el color para que se note que está completada */
+.task, .task-completed {
+  padding: 10px;              /* Asegura un padding uniforme */
+  margin-bottom: 10px !important;;        /* Espacio uniforme entre tareas */
+  border-radius: 8px;         /* Bordes redondeados */
+  border: 2px solid;          /* Define el borde pero el color se especifica en las clases individuales */
 }
 
+.task {
+  border-color: #000000;      /* Borde negro para tareas no completadas */
+  background-color: #ADD8E6;  /* Color de fondo para tareas no completadas */
+}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task-completed {
+  border-color: #808080;      /* Borde gris para tareas completadas */
+  text-decoration: line-through;
+  color: #888;                /* Cambiar el color para que se note que está completada */
+  background-color: #6EE7B7;  /* Color de fondo para tareas completadas */
+}
+/* App.css */
+.body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #941616;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.navigation {
+  width: 200px;
+  background-color: #f0f0f0;
+  border-right: 1px solid #ccc;
+  margin-right: 20px;
+}
+
+.content {
+  max-width: 90%;
+  width: 100%;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
 }

@@ -9,7 +9,7 @@ const TodoList = () => {
       ? JSON.parse(savedTasks)
       : [
           { id: 1, description: 'Lavar el auto', completed: false },
-          { id: 2, description: 'Cortar el pasto', completed: false },
+          { id: 2, description: 'Cortar el pasto', completed: true },
           { id: 3, description: 'Comprar regalo barato para la suegra', completed: false },
           { id: 4, description: 'Cambiar la bombilla de la heladera', completed: false } 
         ];

@@ -11,14 +11,14 @@ const AddTodoForm = ({ onAddTask }) => {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} style={{ marginBottom: '20px' }}> {/* Agregar margen inferior */}
       <input
         type="text"
         value={input}
         onChange={(e) => setInput(e.target.value)}
-        placeholder="Add a new task"
+        placeholder="Escribe una nueva tarea"
       />
-      <button type="submit">Add Task</button>
+      <button type="submit">Agregar tarea</button>
     </form>
   );
 };
