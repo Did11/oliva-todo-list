@@ -1,4 +1,4 @@
-# Challenge Todo-List - JavaScript
+# Challenge To-Do-List - JavaScript
 Este repositorio contiene el desafío "Todo-List" de JavaScript. En este proyecto, he creado una aplicación de lista de tareas (to-do list) utilizando React.
 
 ## Requisitos
@@ -16,7 +16,7 @@ Este repositorio contiene el desafío "Todo-List" de JavaScript. En este proyect
 - Eliminar tareas.
 - Organizar tareas en dos columnas: por hacer y completadas.
 
-## Tecnologías Utilizadas
+## Tecnologías utilizadas
 
 - React
 - HTML
@@ -25,7 +25,7 @@ Este repositorio contiene el desafío "Todo-List" de JavaScript. En este proyect
 - Bootstrap
 - Bootstrap
 
-## Información Adicional
+## Información adicional
 
 - Implementación como una SPA (Single Page Application).
 - Uso de arrow functions en el código.
