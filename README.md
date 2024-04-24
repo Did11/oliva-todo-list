@@ -1,5 +1,5 @@
 # Challenge Todo-List - JavaScript
-Este repositorio contiene la tarea de la Guía 01 de JavaScript. En este proyecto, he creado una aplicación de lista de tareas (todo list) utilizando React, inspirada en el estilo de la aplicación Trello.
+Este repositorio contiene el desafío "Todo-List" de JavaScript. En este proyecto, he creado una aplicación de lista de tareas (to-do list) utilizando React.
 
 ## Requisitos
 
