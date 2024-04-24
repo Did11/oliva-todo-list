@@ -22,12 +22,16 @@ Este repositorio contiene la tarea de la Guía 01 de JavaScript. En este proyect
 - HTML
 - CSS
 - JavaScript
+- Bootstrap
 
 ## Información Adicional
 
 - Implementación como una SPA (Single Page Application).
 - Uso de arrow functions en el código.
 - Uso de localStorage para almacenar las tareas.
+- La aplicación puede probarse localmente utilizando `serve -s build` en un entorno diferente al de desarrollo.
 
+## Autor
 
+Oliva, Didier.
 
