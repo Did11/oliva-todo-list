@@ -14,7 +14,6 @@ Este repositorio contiene el desafío "Todo-List" de JavaScript. En este proyect
 - Agregar nuevas tareas.
 - Marcar tareas como completadas.
 - Eliminar tareas.
-- Organizar tareas en dos columnas: por hacer y completadas.
 
 ## Tecnologías utilizadas
 
